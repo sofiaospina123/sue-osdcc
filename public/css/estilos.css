@@ -1,0 +1,150 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#video{
+    background-image: url(https://previews.123rf.com/images/zacky24/zacky241610/zacky24161000006/68881931-patr%C3%B3n-sin-fisuras-con-las-materias-escolares.jpg); 
+
+    text-align: center;
+    padding: 30px 0;
+}
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-container{
+    display: flex;
+
+}
+.img-container img{
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+.img-container img:not(:last-child){
+    margin-right: 10px;
+    
+}
+.img-container:hover > :not(:hover){
+    opacity: 0.2;
+    
+}
+.img1{
+    width: 25%;
+    animation: float 2s linear infinite;
+}
+@keyframes float {
+    0%, 100%{
+    transform: traslateY(0rem);
+}
+50%{
+    transform: translateY(-1.5rem);
+}
+
+}
+
+.img2{
+    width: 25%;
+
+}
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos de productos destacados */
+.destacados {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.destacados h2 {
+    font-size: 24px;
+}
+
+.producto {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contacto h2 {
+    font-size: 24px;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
